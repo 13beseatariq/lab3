@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>background</title>
+		
+		<style type="text/css">
+		@keyframes area_animated 
+		{
+			from { background-position: 0 0; }
+			to { background-position: 100% 0; }
+			}
+			#moving_div	
+			{ 
+			width: 1350px;
+		    height: 600px;
+		    background-image: url(clouds-1.jpg);
+		    background-position: 0px 0px;
+		    background-repeat: repeat-x;
+		    animation: area_animated 20s linear infinite;
+		    -ms-animation: area_animated 20s linear infinite;
+		    -moz-animation: area_animated 20s linear infinite;
+		    -webkit-animation: area_animated 20s linear infinite;
+			}
+
+	.position{
+		left: 100px;
+		top: 100px;
+	}
+
+	.move:hover
+        	{
+        		transform: translate(1000px,0);
+  			  -webkit-transform: translate(1000px,0); /** Chrome & Safari **/
+    	-o-transform: translate(1000px,0); /** Opera **/
+    -moz-transform: translate(1000px,0); /** Firefox **/
+		}
+		.cir
+		{
+			
+			transition: all 2s linear;
+    -webkit-transition: all 2s linear; /** Chrome & Safari **/
+    -moz-transition: all 2s linear; /** Firefox **/
+    -o-transition: all 2s linear; /** Opera **/
+		}
+		
+		img{
+			position: absolute;
+			left: 200px;
+			top: 250px;
+				transition: all 2s linear;
+    -webkit-transition: all 2s linear; /** Chrome & Safari **/
+    -moz-transition: all 2s linear; /** Firefox **/
+    -o-transition: all 2s linear; /** Opera **/
+		
+		
+   	
+		}
+		
+		img:active{
+			transform: translate(1000px,0);
+  			  -webkit-transform: translate(1000px,0); /** Chrome & Safari **/
+    	-o-transform: translate(1000px,0); /** Opera **/
+    -moz-transform: translate(1000px,0); /** Firefox **/
+		}
+		
+		</style>
+	</head>
+
+	<body>
+	<div id="moving_div">
+		<img src="object-1.png">
+	</div>
+	<div align="center" style="padding-top: 20px">
+		<form name="buttons_frame">
+			<input type="button" name="up" value="UP"/>
+			<input type="button" name="right" value="RIGHT" />
+			<input type="button" name="down" value="DOWN" />
+			<input type="button" name="left" value="LEFT" /> 
+		</form>
+	</div>
+	</body>
+</html>
