@@ -1,0 +1,101 @@
+@keyframes area_animated {
+ from {
+background-position: 0 0;
+}
+ to {
+background-position: 100% 0;
+}
+}
+div#moving_div {
+	width: 1350px;
+	height: 600px;
+	background-image: url(clouds-1.jpg);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	animation: area_animated 20s linear infinite;
+	-ms-animation: area_animated 20s linear infinite;
+	-moz-animation: area_animated 20s linear infinite;
+	-webkit-animation: area_animated 20s linear infinite;
+}
+
+@keyframes wall {
+ from {
+transform: translate(1300px,0px)
+}
+ to {
+transform: translate(0px,0px)
+}
+}
+.obstacle_div > img 
+{
+		animation: wall 5s linear infinite;
+	-ms-animation: wall 5s linear infinite;
+	-moz-animation: wall 5s linear infinite;
+	-webkit-animation: wall 5s linear infinite;
+}
+
+
+@keyframes wall1 {
+ from {
+transform: translate(1300px,0px)
+}
+ to {
+transform: translate(0px,0px)
+}
+}
+.obstacle_div1 > img 
+{
+		animation: wall1 10s linear infinite;
+	-ms-animation: wall1 10s linear infinite;
+	-moz-animation: wall1 10s linear infinite;
+	-webkit-animation: wall1 10s linear infinite;
+}
+
+@keyframes wall2 {
+ from {
+transform: translate(1300px,0px)
+}
+ to {
+transform: translate(0px,0px)
+}
+}
+.obstacle_div2 > img 
+{
+		animation: wall2 7s linear infinite;
+	-ms-animation: wall2 7s linear infinite;
+	-moz-animation: wall2 7s linear infinite;
+	-webkit-animation: wall2 7s linear infinite;
+}
+
+
+@keyframes wall3 {
+ from {
+transform: translate(250px,450px)
+}
+ to {
+transform: translate(1200px,0px)
+}
+}
+.obstacle_div3 > img 
+{
+		animation: wall3 5s linear infinite;
+	-ms-animation: wall3 5s linear infinite;
+	-moz-animation: wall3 5s linear infinite;
+	-webkit-animation: wall3 5s linear infinite;
+}
+
+@keyframes wall4 {
+ from {
+transform: translate(200px,0px)
+}
+ to {
+transform: translate(800px,550px)
+}
+}
+.obstacle_div4 > img 
+{
+		animation: wall4 4s linear infinite;
+	-ms-animation: wall4 4s linear infinite;
+	-moz-animation: wall4 4s linear infinite;
+	-webkit-animation: wall4 4s linear infinite;
+}
